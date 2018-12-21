@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld v-model="msg"/>
+    <button @click="fn2">外面修改外面</button>
+    <TestSlot a="1"><template slot-scope="{message}">{{message}}</template></TestSlot>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import TestSlot from './components/slot.vue'
 
 export default {
   name: 'app',
+  data: function(){
+    return {
+      msg: 'hehe'
+    }
+  },
+  methods: {
+    fn2(){
+      this.msg = this.msg + 1;
+    }
+  },
   components: {
-    HelloWorld
+    HelloWorld,
+    TestSlot
   }
 }
 </script>
