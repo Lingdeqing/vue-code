@@ -1,10 +1,11 @@
 <template>
     <div>
-        <CustomInput v-model="msg"/>
-        {{msg}}
+        <CustomInput v-model="msg" :title="title" haha="abc"  :data="obj2"/>
+        {{msg}}<br>
+        obj2: {{obj2.value}}
         <CustomInput2 v-model="obj"/>
         {{JSON.stringify(obj)}}<br>
-        <base-input :value="msg"/>
+        <base-input v-model="msg" class="base-input" placeholder="enter"/>
     </div>
 </template>
 <script>
@@ -18,11 +19,15 @@ export default {
     },
     data(){
         return {
+            title: 0,
             msg: '',
             obj: {
                 value: 'A',
                 label: '啊啊啊'
             },
+            obj2: {
+                value: 'B'
+            }
         }
     },
     created(){
