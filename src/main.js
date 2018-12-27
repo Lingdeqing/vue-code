@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './examples/事件.vue'
+import App from './examples/v-model.vue'
 
 Vue.config.productionTip = false
 
