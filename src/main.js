@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './examples/slot.vue'
+import App from './examples/函数式组件.vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
