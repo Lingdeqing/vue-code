@@ -3,7 +3,8 @@
         <CustomInput v-model="msg"/>
         {{msg}}
         <CustomInput2 v-model="obj"/>
-        {{JSON.stringify(obj)}}
+        {{JSON.stringify(obj)}}<br>
+        <base-input :value="msg"/>
     </div>
 </template>
 <script>
@@ -21,7 +22,7 @@ export default {
             obj: {
                 value: 'A',
                 label: '啊啊啊'
-            }
+            },
         }
     },
     created(){
