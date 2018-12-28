@@ -1,7 +1,11 @@
 import Vue from 'vue'
-import App from './examples/函数式组件.vue'
+import App from './examples/循环引用.vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+
+
+import './examples/循环引用.js'
+
 
 Vue.config.productionTip = false
 
