@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './examples/循环引用.vue'
+import App from './examples/css过度.vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
