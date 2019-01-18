@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './examples/显性的过度持续时间.vue'
+import App from './examples/provide-inject.vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
