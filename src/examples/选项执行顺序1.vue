@@ -9,6 +9,12 @@
 </template>
 <script>
 export default {
+    provide(){
+        console.log('provide')
+        return {
+            p: 1
+        }
+    },
     props: {
         p1: {
             type: String,

@@ -10,6 +10,7 @@
             props(如果没有传值,执行default函数)<br>
             data<br>
             watch(immediately)<br>
+            provide<br>
             created<br>
             beforeMount<br>
             compute<br>
