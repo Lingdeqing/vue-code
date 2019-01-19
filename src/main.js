@@ -1,11 +1,12 @@
 import Vue from 'vue'
-import App from './examples/选项执行顺序.vue'
+import App from './examples/js动画钩子-js.vue'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
 
 import './examples/循环引用.js'
 import '@/assets/animate.css'
+import 'velocity-animate'
 
 
 Vue.config.productionTip = false
