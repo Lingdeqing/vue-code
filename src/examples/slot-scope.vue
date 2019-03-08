@@ -1,6 +1,9 @@
 <template>
     <ul>
         <li v-for="item in list" :key="item">
+            <slot name="slot1" :item="item">
+                {{item}}
+            </slot>
             <slot :item="item">
                 {{item}}
             </slot>
