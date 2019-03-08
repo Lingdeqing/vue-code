@@ -1,11 +1,16 @@
 import Vue from 'vue'
+<<<<<<< HEAD
 import App from './examples/新版slot.vue'
+=======
+import App from './examples/列表过度2.vue'
+>>>>>>> 7f3768c26d2c49af7a115b4dc248b3752c2badd8
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
 
 import './examples/循环引用.js'
 import '@/assets/animate.css'
+import 'velocity-animate'
 
 
 Vue.config.productionTip = false
