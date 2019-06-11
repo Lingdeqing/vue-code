@@ -1,13 +1,14 @@
 <template>
     <div>
-        <p>p1: {{p1}}</p>
-        <p>d1: {{d1}}</p>
         <p>c1: {{c1}}</p>
         <p>m1: {{m1()}}</p>
+        <p>d1: {{d1}}</p>
+        <p>p1: {{p1}}</p>
         <button @click="changeState">组件内部状态修改</button>
     </div>
 </template>
 <script>
+let counter = 1;
 export default {
     provide(){
         console.log('provide')
@@ -38,6 +39,7 @@ export default {
     },
     beforeUpdate(){
         console.log('beforeUpdate')
+        this.d1 = 'd' + ++counter;
     },
     updated(){
         console.log('updated')
@@ -80,7 +82,7 @@ export default {
             return 'm1';
         },
         changeState(){
-            this.d1 = 'd2';
+            this.d1 = 'd' + ++counter;
         }
     }
 }

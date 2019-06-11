@@ -21,18 +21,16 @@
         <h2>更新props</h2>
         <p>
             watch(props)<br>
-            compute(修改了依赖的prop)<br>
-            methods(模板里面调用的method)<br>
             beforeUpdate<br>
+            （取决于模板中的顺序）compute(修改了依赖的prop) / methods(模板里面调用的method)<br>
             updated<br>
         </p>
 
         <h2>更新状态</h2>
         <p>
             watch(data)<br>
-            compute(修改了依赖的data)<br>
-            methods(模板里面调用的method)<br>
             beforeUpdate<br>
+            （取决于模板中的顺序）compute(修改了依赖的data) / methods(模板里面调用的method)<br>
             updated<br>
         </p>
 
