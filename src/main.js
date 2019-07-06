@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './examples/钩子函数循环'
+import App from './examples/observable'
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
